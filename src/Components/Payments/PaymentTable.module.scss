@@ -1,0 +1,23 @@
+
+.payment-table{
+    margin-right: 50px;
+
+    :global(tbody tr:nth-child(even) .tb-cell){
+        background: #DEECF9;
+    } 
+    :global(tbody  .tage){
+        background-color: #02B8F2;
+            width: fit-content;
+    }
+
+     :global(.ant-table-pagination)
+     {
+        margin: 5px 0 !important;
+     }
+    :global(.ant-table-container)  {
+        font-size: 16px;
+      }
+      :global(tbody tr:nth-child(1)  .tb-cell){
+        margin-top: 15px !important;
+      }
+}

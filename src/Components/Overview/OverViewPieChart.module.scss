@@ -1,0 +1,28 @@
+.pie-chart-con{
+    .pie-title{
+        margin-bottom: -40px !important;
+    }
+    .credit,.loans,.revolving,.auto{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        margin-right: 7px;
+    }
+    .credit{
+        background-color: #18132A;
+    }
+    .loans{
+        background-color: #02B8F2; 
+    }
+    .revolving{
+        background-color: #002E58;
+    }
+    .auto{
+        background-color: #B9BEED;
+
+    }
+    .spend-amount{
+        margin-left: -9px;
+    }
+}

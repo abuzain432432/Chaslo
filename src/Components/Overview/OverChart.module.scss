@@ -1,0 +1,16 @@
+
+.overview-chart{
+ align-self: stretch;
+ flex-grow: 1;
+ .overview-chart-wrapper{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+ }
+ :global(.recharts-yAxis){
+   transform: translate(-15px);
+ }
+ :global(.recharts-xAxis ){
+   transform: translate(0px, 15px);
+ }
+}

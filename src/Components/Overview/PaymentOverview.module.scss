@@ -1,0 +1,20 @@
+.payment-overview{
+    gap: 60px;
+    flex-grow: 1;
+    .payment-overview-icon-con{
+        background-color: #DEECF9;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .payment-overview-label{
+        font-weight: 600 !important;
+        white-space: nowrap;
+    }
+    .payment-overview-amount{
+        font-size: 30px;
+    }
+}

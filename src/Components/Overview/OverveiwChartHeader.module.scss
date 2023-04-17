@@ -1,0 +1,11 @@
+.overview-chart-header{
+        align-self: stretch;
+        h2{
+                font-weight: 400 !important;
+                font-size: 28px;
+        }
+        :global(.ant-select-selector){
+                min-width: 90px;
+                border-radius: 30px;
+        }
+}

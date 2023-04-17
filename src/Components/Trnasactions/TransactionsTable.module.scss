@@ -1,0 +1,42 @@
+.transactions-table{
+    :global(tbody tr:nth-child(1)  .tb-cell){
+        margin-top: 15px !important;
+      }
+
+    :global(.ant-table-thead .ant-table-cell){
+         border-bottom: 1px solid rgba(0, 0, 0, 0.15)!important;
+         padding-bottom: 10px !important; 
+    }
+    :global(tbody .tb-cell)
+    {
+        padding:  12px 0 !important;
+        display: flex;
+        align-items: center;
+    }
+    :global(tbody tr:nth-child(even) .tb-cell){
+        background: #DEECF9;
+    } 
+
+    :global(tbody  .dark){
+        background: #02B8F2;
+            width: fit-content;
+    }
+    :global(tbody  .light){
+        background: #BBDEFF;
+            width: fit-content;
+            color: black !important;
+    }
+
+     :global(.ant-table-pagination)
+     {
+        margin: 20px 0 !important;
+     }
+    :global(.ant-table-container)  {
+        font-size: 18px;
+      }
+      :global(.ant-avatar ){
+        display: block;
+        margin-right: 26px;
+        margin-left: 10px;
+      }
+}

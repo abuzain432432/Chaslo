@@ -1,0 +1,11 @@
+.articles{
+    width: 70%;
+    :global(h2.ant-typography){
+        color: rgba(0, 0, 0, 0.688);
+        font-size: 28px;
+    }
+    :global(h3.ant-typography){
+        color: rgba(0, 0, 0, 0.688);
+        font-size: 24px;
+    }
+}

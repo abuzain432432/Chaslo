@@ -1,0 +1,36 @@
+
+.overview-table-con{
+    .view-all{
+        color : #02B8F2;
+        text-decoration: none;
+      }
+      .view-all:hover{
+        color: #02b6f2af;
+      }
+      :global(tbody tr:nth-child(even) .tb-cell){
+        background: #DEECF9;
+    } 
+    :global(tbody  .dark){
+        background-color: #02B8F2;
+            width: fit-content;
+    }
+    :global(tbody  .light)
+    {
+        background-color: #BBDEFF;
+            width: fit-content;
+            color: black !important;
+    }
+
+    :global(.ant-table-container)  
+    {
+        font-size: 18px;
+    }
+    :global(tbody tr:nth-child(1)  .tb-cell)
+    {
+        margin-top: 15px !important;
+    }
+    :global(tbody .ant-table-cell)
+      {
+        background: white  !important;
+      }
+}

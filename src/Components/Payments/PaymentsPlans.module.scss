@@ -1,0 +1,28 @@
+.payment-plans{
+ border:2px solid #E4EAE7;   
+ border-radius: 16px;
+ .icon-con{
+    width: 24px;
+    height: 24px;
+    box-shadow: 0px 0px 0px 1px #1B470A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon{
+        display: none;
+    }
+}
+
+ &.recomended{
+    border:2px solid  #02B8F2;  
+    .icon,.list-icon{
+        color: #02B8F2;
+        display: block;
+     }
+     .icon-con{
+        box-shadow: none !important;
+     }
+ }
+}
+

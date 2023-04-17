@@ -1,0 +1,65 @@
+.contact-form{
+    .form-control{
+        gap: 70px;
+    }
+    :global(.ant-btn){
+     background-image: linear-gradient(to left , #000 0%,#0293BE 80%);
+     color: white;
+     height:auto;
+     font-size: 16px;
+     padding: 7px 30px;
+     transition: all .3s;
+     margin-top: 50px;
+    }
+    :global(.ant-btn:hover){
+      color: white;
+      opacity: .95;
+      transform: scale(1.05);
+    }
+    :global(.ant-form-item){
+
+        :global(.PhoneInput){
+        display: flex;
+        min-width: 250px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.172);
+        }
+        :global(.PhoneInputCountry){
+            display: grid;
+            grid-template-columns: 30px 20px;
+        }
+        :global(.PhoneInputCountryIcon){
+            grid-row: 1/2;
+        }
+        :global(.PhoneInputCountrySelect){
+           border: none !important;
+        }
+        :global(.PhoneInputInput){
+          flex: 1;
+          border: none;
+          font-size: 16px;
+        }
+        :global(.PhoneInputInput:focus-visible){
+            outline: none;
+        }
+        :global(label){
+            font-weight: 500;
+        }
+        :global(.ant-input ){
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.172);
+            border-radius: 0px !important;
+            padding: 0;
+            min-width: 250px;
+            font-size: 16px;
+        }
+        :global(.ant-form-item-label ){
+            padding: 0;
+          }
+          :global(.ant-input:focus ){
+              box-shadow: none;  
+          }
+          :global(.ant-form-item-control-input){
+                min-height: 28px;
+          }
+    }  
+}

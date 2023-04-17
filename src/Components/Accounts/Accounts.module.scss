@@ -1,0 +1,21 @@
+.accounts{
+    .export-btn{
+        border: none;
+        background: #E2E2E7;
+        cursor: pointer;
+    }
+    .add-account-btn{
+        border: none;
+        background: #02B8F2;
+        color: white;
+        cursor: pointer;
+    }
+   .add-account-btn:hover{
+        background: #02b6f2c2;
+        color: white;
+    }
+    .export-btn:hover{
+        background: #e2e2e7af;
+        color: black;
+    }
+}

@@ -1,0 +1,33 @@
+.accounts-table{
+    :global(.ant-table-container)  {
+        font-size: 18px;
+        :global(tbody .tb-cell){
+            padding: 12px 12px  !important;
+        }
+        :global(.ant-table-thead .ant-table-cell){
+             border-bottom: 1px solid rgba(0, 0, 0, 0.15)!important;
+             padding-bottom: 10px !important;
+        }
+        :global(tbody tr:nth-child(even) .tb-cell){
+            background: #DEECF9 !important;
+        } 
+        :global(tbody tr:nth-child(even) td:nth-child(6)){
+            background: #DEECF9 !important;
+    
+        } 
+        :global(thead th:nth-child(6)){
+            text-align: center;
+        }    
+      }
+    :global(.ant-avatar ){
+        display: block;
+        margin-right: 26px;
+    }
+     :global(.ant-table-pagination)
+     {
+        margin: 10px 0 !important;
+     }
+      :global(tbody tr:nth-child(1)  .tb-cell){
+        margin-top: 15px !important;
+      }
+}

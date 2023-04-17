@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./Layout/Layout";
+import { REGISTER_ROUTE_CONST, LOGIN_ROUTE_CONST } from "./Constants/ROUTES_CONST";
+import UserRegister from "./pages/UserSignUp/UserRegister";
+import UserLoginPage from "./pages/UserLogin/UserLoginPage";
+import styles from './App.module.scss'
+// import { useLocation, useParams } from 'react-router-dom'
 function App() {
+  // const param = useLocation();
+  // useEffect(() => {
+  //   console.log(param);
+  // }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${styles['app']}  d-flex flex-column`}>
+      {/* <Routes>
+        <Route path={LOGIN_ROUTE_CONST} element={<UserLoginPage />} />
+        <Route path={REGISTER_ROUTE_CONST} element={<UserRegister />} />
+      </Routes> */}
+      <Dashboard />
     </div>
   );
 }
