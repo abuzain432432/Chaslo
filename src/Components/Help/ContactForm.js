@@ -23,9 +23,8 @@ export default function ContactForm() {
                         <Input />
                     </Form.Item>
                     <Form.Item name={'phone'} label='Phone'>
-                        {/* <Input /> */}
-                        <PhoneInput
-                        />
+
+                        <PhoneInput />
                     </Form.Item>
                 </div>
                 <Form.Item name={'message'} label='Message'>

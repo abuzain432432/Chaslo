@@ -1,0 +1,18 @@
+.landing-form{
+   :global(.ant-form-item )
+   { 
+    width: 370px;
+    margin-bottom: 10px;
+    :global(.ant-input){
+        padding: 6px;
+        padding-left: 14px;
+        font-size: 16px;
+    }
+    :global(.ant-input::placeholder){
+        color: rgba(0, 0, 0, 0.613);
+    }
+   }
+   .submit-btn-inner-con{
+   width: 45%;
+   }
+}
