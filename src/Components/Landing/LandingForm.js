@@ -10,7 +10,7 @@ export default function LandingForm() {
     return (
         <div className={styles['landing-form']}>
             <Form onFinish={formSubmitHandler}>
-                <Form.Item name={'fullName'}>
+                <Form.Item name={'fullName'} >
                     <Input placeholder='Full Name' />
                 </Form.Item>
                 <Form.Item name={'emil'}>

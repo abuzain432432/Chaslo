@@ -1,25 +1,36 @@
-// import { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
-import Dashboard from "./Layout/Layout";
-import { REGISTER_ROUTE_CONST, LOGIN_ROUTE_CONST, LANDING_ROUTE_CONST } from "./Constants/ROUTES_CONST";
-import UserRegister from "./pages/UserSignUp/UserRegister";
-import UserLoginPage from "./pages/UserLogin/UserLoginPage";
+import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } from "react-router-dom";
+import DashboardLayout from "./Layout/Layout";
+import OverviewPage from './pages/OverviewPage/OverviewPage'
+import PaymentsPage from './pages/PaymentPage/PaymentPage'
+import TransactionsPage from './pages/TransactionsPage/TransactionsPage'
+import AccountsPage from "./pages/AccountsPage/AccountsPage";
+import SettingsPage from './pages/SettingsPage/SettingsPage'
+import HelpPage from './pages/HelpPage/HelpPage'
 import LandingPage from "./pages/LandingPage/LandingPage";
 import styles from './App.module.scss'
-// import { useLocation, useParams } from 'react-router-dom'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" >
+      <Route index element={<LandingPage />} />
+
+      <Route path="dashboard" element={<DashboardLayout />} >
+        <Route index element={<OverviewPage />} />
+        <Route path="payments" element={<PaymentsPage />} />
+        <Route path="transactions" element={<TransactionsPage />} />
+        <Route path="accounts" element={<AccountsPage />} />
+        <Route path="settings" element={<SettingsPage />} />
+        <Route path="help" element={<HelpPage />} />
+      </Route>
+
+    </Route>
+  )
+);
+
 function App() {
-  // const param = useLocation();
-  // useEffect(() => {
-  //   console.log(param);
-  // }, [])
   return (
     <div className={`${styles['app']}  d-flex flex-column`}>
-      <Routes>
-        <Route path={LOGIN_ROUTE_CONST} element={<UserLoginPage />} />
-        <Route path={REGISTER_ROUTE_CONST} element={<UserRegister />} />
-        <Route path={LANDING_ROUTE_CONST} element={<LandingPage />} />
-      </Routes>
-      {/* <Dashboard /> */}
+      <RouterProvider router={router} />
     </div>
   );
 }

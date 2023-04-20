@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react'
-import Pages from '../pages/Pages'
+import React from 'react'
+import { Outlet } from 'react-router-dom'
 import { Layout as AntdLayout } from 'antd'
 import style from './Layout.module.scss'
 import NavBar from '../Components/NavBar/NavBar'
+const { Content } = AntdLayout
 
 export default function Dashboard() {
-    useEffect(() => {
-        console.log('active tab')
-    }, [])
     return (
         <AntdLayout className={`${style['antd-layout-con']} position-relative`}>
             <NavBar />
-            <Pages />
+            <Content>
+                <Outlet />
+            </Content>
+            {/* <Outlet /> */}
         </AntdLayout>
     )
 }

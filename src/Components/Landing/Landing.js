@@ -8,9 +8,9 @@ import { Typography } from 'antd'
 
 const { Title, Paragraph } = Typography;
 export default function Landing() {
-    const success = true;
+    const success = false;
     return (
-        <div className={`align-items-center justify-content-center d-flex flex-column flex-grow-1 ${styles.landing}`}>
+        <div className={`${!success && 'justify-content-center'} ${success && styles['padding-top']} align-items-center  d-flex flex-column flex-grow-1 ${styles.landing}`}>
             <div >
                 <div className={`text-centern ${styles['img-con']}`} >
                     <img src={logoImage} alt='chashola logo' />

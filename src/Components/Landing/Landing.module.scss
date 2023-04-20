@@ -1,6 +1,9 @@
 .landing{
     background-color: #18132A;
     color: white;
+    &.padding-top{
+        padding-top: 100px;
+    }
     .icon-con{
         width: 34px;
         height: 34px;
