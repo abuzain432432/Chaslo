@@ -12,7 +12,6 @@ export default function Dashboard() {
             <Content>
                 <Outlet />
             </Content>
-            {/* <Outlet /> */}
         </AntdLayout>
     )
 }

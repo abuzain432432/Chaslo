@@ -1,19 +1,13 @@
 import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } from "react-router-dom";
 import DashboardLayout from "./Layout/Layout";
-import OverviewPage from './pages/OverviewPage/OverviewPage'
-import PaymentsPage from './pages/PaymentPage/PaymentPage'
-import TransactionsPage from './pages/TransactionsPage/TransactionsPage'
-import AccountsPage from "./pages/AccountsPage/AccountsPage";
-import SettingsPage from './pages/SettingsPage/SettingsPage'
-import HelpPage from './pages/HelpPage/HelpPage'
-import LandingPage from "./pages/LandingPage/LandingPage";
+import { OverviewPage, PaymentsPage, TransactionsPage, AccountsPage, SettingsPage, HelpPage, LandingPage } from './routes/routes'
 import styles from './App.module.scss'
+import 'react-phone-number-input/style.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" >
       <Route index element={<LandingPage />} />
-
       <Route path="dashboard" element={<DashboardLayout />} >
         <Route index element={<OverviewPage />} />
         <Route path="payments" element={<PaymentsPage />} />
@@ -22,7 +16,6 @@ const router = createBrowserRouter(
         <Route path="settings" element={<SettingsPage />} />
         <Route path="help" element={<HelpPage />} />
       </Route>
-
     </Route>
   )
 );

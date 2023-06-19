@@ -1,0 +1,49 @@
+.accounts-details{
+    padding: 10px 0px 0px 70px;
+    width: 30%;
+    .btn-con{
+        width: fit-content;
+    }
+    :global(.ant-input ){
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    :global(.ant-input-status-error){
+        border-color: #BBBABA !important;
+        box-shadow: none !important;
+    }
+    :global(label){
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+    :global(.PhoneInput){
+        border: 1px solid #BBBABA ;
+        padding:5px 10px;
+        background-color: white;
+        border-radius: 5px;
+
+        :global(.PhoneInputInput){
+         border: none !important;
+        }
+        :global(.PhoneInputInput:focus-visible){
+            outline: none;
+         }
+    }
+    .select-container{
+        :global( .ant-form-item ){
+            flex-grow: 1;
+        }
+    }
+    
+    :global(.ant-form-item-label){
+     padding-bottom: 4px !important;
+    }
+
+    .city-state-con,  :global(.ant-form-item ){
+        margin-bottom: 16px !important;
+    }
+    .phone-number-con{
+        margin-top: 16px;
+    }
+   
+}

@@ -1,0 +1,6 @@
+
+.ant-menu-item:has(.ant-menu-title-content):has(.active-link) {
+     background: #DEECF9 !important;
+     box-shadow: inset 4px 0px 0px 0px #0C8CE9;
+     color: #02B8F2 !important;
+  }

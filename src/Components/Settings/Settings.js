@@ -1,11 +1,12 @@
 import React from 'react'
-import { Typography } from 'antd'
-const { Title } = Typography;
+import SettingsTab from './SettingTab';
+import styles from './Settings.module.scss'
+export default function Settings(props) {
+    const { accountDetails } = props;
 
-export default function Settings() {
     return (
-        <div>
-            <Title level={2}>Account Setting</Title>
+        <div className={styles['settings']}>
+            <SettingsTab accountDetails={accountDetails} />
         </div>
 
     )

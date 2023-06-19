@@ -2,6 +2,7 @@ import React from 'react'
 import { Form, Input } from 'antd'
 import FormSubmitButton from '../GeneralUI/FormSubmitButton/FormSubmitButton'
 import styles from './LandingForm.module.scss'
+import { getRequrieRules, getValidateEmailRules } from '../../FN/FormFn'
 
 export default function LandingForm() {
     const formSubmitHandler = () => {
@@ -9,14 +10,14 @@ export default function LandingForm() {
     }
     return (
         <div className={styles['landing-form']}>
-            <Form onFinish={formSubmitHandler}>
-                <Form.Item name={'fullName'} >
+            <Form onFinish={formSubmitHandler} >
+                <Form.Item name={'fullName'} rules={[getRequrieRules('fullName')]}>
                     <Input placeholder='Full Name' />
                 </Form.Item>
-                <Form.Item name={'emil'}>
+                <Form.Item name={'emil'} rules={[getRequrieRules('email'), getValidateEmailRules()]}>
                     <Input placeholder='Enter your email address' />
                 </Form.Item>
-                <Form.Item name={'phoneNumber'}>
+                <Form.Item name={'phoneNumber'} rules={[getRequrieRules('phone number')]}>
                     <Input placeholder='Phone Number (optional)' />
                 </Form.Item>
                 <Form.Item name={'referalCode'}>

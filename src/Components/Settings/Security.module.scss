@@ -1,0 +1,29 @@
+.security{
+    padding: 10px 0px 0px 70px;
+    width: 30%;
+    .btn-con{
+        width: fit-content;
+    }
+    :global(label){
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+    :global(.ant-input ){
+        border-radius: 5px;
+        font-size: 16px;
+        border: 1px solid #BBBABA ;
+    }
+    :global(.ant-input-affix-wrapper-status-error){
+        border-color: #BBBABA !important;
+        box-shadow: none !important;
+    }
+    :global(.ant-form-item ){
+        margin-bottom: 16px !important;
+    }
+    .pass-con{
+        margin-top: 16px !important;
+        :global(.ant-form-item ){
+            margin-bottom: 0 !important;
+        }
+    }
+}

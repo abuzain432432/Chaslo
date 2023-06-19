@@ -1,0 +1,36 @@
+.input-con{
+    position: relative;
+    .tage{
+        position: absolute;
+        bottom: 28px;
+        z-index: 10;
+        font-size: 13px;
+        left: 12px;
+        color: #50474770;
+      
+    }
+    &.top .tage{
+         top: 4px !important;
+    }
+
+    :global(.ant-form-item-control-input-content){
+        height: 55px;
+        position: relative;
+        border: 1px solid #BBBABA ;
+        background-color: white;
+        display: flex;
+        border-radius: 4px;
+
+        :global(.ant-input ){
+            border: none;
+            background-color: white;
+            height: 80% !important;
+            margin-top: auto;
+        }
+        :global(.ant-input:focus-visible ){
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+       }
+}  

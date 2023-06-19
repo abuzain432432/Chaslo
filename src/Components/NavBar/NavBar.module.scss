@@ -2,10 +2,6 @@
 .page-menu{
     padding: 25px 0 30px 30px;
     background-color: white;
-    
-    :global(.ant-menu-item-active)  { 
-        border-radius: 2px !important;
-    }
     :global(.ant-menu) {
         padding-right: 10px;
         margin-top: 50px;
@@ -13,21 +9,33 @@
         flex-direction: column;
         gap: 10px;
     }
+
     :global(.ant-layout-sider)  { 
         background-color: white !important;
         max-width: 250px !important;
         min-width: 220px !important;
     }
+
+    :global(.ant-menu-item-active)  { 
+        border-radius: 0px !important;
+    }
+
     :global(.ant-menu-item){
     display: flex;
     align-items: center;
-}
-    :global(.ant-menu-item-selected)  { 
-        background: #DEECF9 !important;
-        border-radius: 2px !important;
-        box-shadow: inset 4px 0px 0px 0px #0C8CE9;
-        color: #02B8F2 !important;
+    border-radius: 0px !important;
+    }
+
+    :global(.ant-menu-item-selected) 
+     { 
+        background-color: transparent !important;
+        color: inherit !important;
         font-weight: 500 !important;
+        border-radius: 0px !important;
+        // box-shadow: inset 4px 0px 0px 0px #0C8CE9;
+        // color: #02B8F2 !important;
+             // border-radius: 2px !important;
+        // background: #DEECF9 !important;
     }
     :global(.ant-menu-title-content)  { 
         margin-inline-start: 15px !important;

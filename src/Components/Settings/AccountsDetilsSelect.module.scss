@@ -1,0 +1,32 @@
+.select-con{
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    background-color: white;
+    padding: 0;
+    padding-top: 15px;
+    align-items: flex-end;
+
+
+    border: 1px solid #BBBABA ;
+    border-radius: 4px;
+
+    :global(.ant-form-item ){
+        flex-grow: 1;
+        margin-bottom :0px !important;
+        align-self: flex-end;
+        :global(.ant-select-selector){
+           border: none !important;
+           box-shadow: none !important;
+        }
+    }
+    .tag{
+        position: absolute;
+        left: 10px;
+        top: 2px;
+        z-index: 1;
+        font-size: 12px;
+        color:  rgb(177, 177, 177);
+    }
+    
+}

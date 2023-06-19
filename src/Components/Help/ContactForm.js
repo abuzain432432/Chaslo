@@ -5,6 +5,7 @@ import Card from '../GeneralUI/Card/Card'
 import PhoneInput from 'react-phone-number-input'
 export default function ContactForm() {
     const formFinshHandler = (data) => {
+        const { firstName, lastName, email, phone, message } = data;
         console.log(data)
     }
     return (
@@ -23,7 +24,6 @@ export default function ContactForm() {
                         <Input />
                     </Form.Item>
                     <Form.Item name={'phone'} label='Phone'>
-
                         <PhoneInput />
                     </Form.Item>
                 </div>
