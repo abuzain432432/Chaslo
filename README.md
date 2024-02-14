@@ -8,7 +8,7 @@ history, and make bill payments effortlessly.
 - [Find me on fiver ](https://www.fiverr.com/zainbinramzan/develop-web-applications-with-mern-stack-react-node-express-moongodbplugin-react/README.md)
 - [Find me on linkedin](https://www.linkedin.com/in/abu-zain-html-css-javascipt-developer/)
 
-![Project page](./readme-images/banner.png)
+![Project page](./readme-images/b.png)
 
 ![Project page](./readme-images/1.PNG)
 
